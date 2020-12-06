@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "917414920988",
+    "firebase_url": "https://flight-booking-f4a37.firebaseio.com",
+    "project_id": "flight-booking-f4a37",
+    "storage_bucket": "flight-booking-f4a37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917414920988:android:ad488b104613a6231f30d9",
+        "android_client_info": {
+          "package_name": "com.example.flightbooking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917414920988-vvlbjkl02trhsleunb00jefvmnuqujtr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6AY6QIw7kKoXcpA0viMjOEXbOJ2YPe-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917414920988-vvlbjkl02trhsleunb00jefvmnuqujtr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917414920988:android:f3802aed516098c61f30d9",
+        "android_client_info": {
+          "package_name": "com.example.flightsbookingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917414920988-vvlbjkl02trhsleunb00jefvmnuqujtr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6AY6QIw7kKoXcpA0viMjOEXbOJ2YPe-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917414920988-vvlbjkl02trhsleunb00jefvmnuqujtr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

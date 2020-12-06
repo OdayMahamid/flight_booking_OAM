@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">flight\'s booking app</string>
+    <string name="sign_up_text">sign up</string>
+    <string name="forgot_password_button">forgot password?</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">login</string>
+    <string name="logo_image">logoimage</string>
+    <string name="first_name">Full name</string>
+    <string name="next_step">Register</string>
+    <string name="click_here">click here</string>
+    <string name="already_have_an_account">already have an account?</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="register_today">register today!</string>
+    <string name="available_now">All available flights </string>
+</resources>
