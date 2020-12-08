@@ -34,7 +34,6 @@ public class myadapter extends FirebaseRecyclerAdapter<flights,myadapter.myviewh
         holder.fromdate_text.setText("From: " + flight_model.fromdate);
         holder.cost_text.setText("Cost: " + flight_model.cost);
     }
-
     @NonNull
     @Override
     public myviewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
