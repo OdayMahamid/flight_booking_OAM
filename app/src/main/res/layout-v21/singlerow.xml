@@ -17,7 +17,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
             android:text="@string/this_is_demo_name"
             android:textColor="#000"
             android:textSize="25sp"
@@ -28,7 +27,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/cost_text"
-            android:layout_marginLeft="10dp"
             android:text="@string/this_is_course_name"
             android:textColor="#000"
             android:textSize="25sp"
@@ -40,8 +38,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/from_text"
-            android:layout_marginLeft="10dp"
-            android:text="This is Email Name"
+            android:layout_marginStart="10dp"
+            android:text="@string/this_is_email_name"
             android:textColor="#000"
             android:textSize="25sp" />
 
@@ -50,9 +48,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/from_text"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="34dp"
-            android:text="This is Email Name"
+            android:text="@string/this_is_email_name"
             android:textColor="#000"
             android:textSize="25sp" />
 
@@ -61,9 +59,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/from_text"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="70dp"
-            android:text="This is Email Name"
+            android:text="@string/this_is_email_name"
             android:textColor="#000"
             android:textSize="25sp" />
 
@@ -72,18 +70,14 @@
             android:layout_width="125dp"
             android:layout_height="59dp"
             android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="12dp"
-            android:layout_marginLeft="12dp"
             android:layout_marginTop="173dp"
             android:layout_marginEnd="198dp"
-            android:layout_marginRight="198dp"
             android:layout_marginBottom="19dp"
-            android:text="BUY" />
+            android:text="@string/buy" />
 
 
     </RelativeLayout>

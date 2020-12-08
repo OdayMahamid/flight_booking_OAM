@@ -14,4 +14,10 @@
     <string name="confirm_password">confirm password</string>
     <string name="register_today">register today!</string>
     <string name="available_now">All available flights </string>
+    <string name="this_is_demo_name">This is Demo Name</string>
+    <string name="this_is_course_name">This is Course Name</string>
+    <string name="this_is_email_name">This is Email Name</string>
+    <string name="this_is_email_name">This is Email Name</string>
+    <string name="this_is_email_name">This is Email Name</string>
+    <string name="buy">BUY</string>
 </resources>
