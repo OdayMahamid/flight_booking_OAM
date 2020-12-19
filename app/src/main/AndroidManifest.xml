@@ -11,6 +11,9 @@
         android:theme="@style/Theme.FlightsBookingApp">
         <activity android:name=".booking"></activity>
         <activity android:name=".register"></activity>
+        <activity android:name=".custlogin"></activity>
+        <activity android:name=".managerlogin"></activity>
+        <activity android:name=".manager_register"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

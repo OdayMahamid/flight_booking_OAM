@@ -19,7 +19,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.Objects;
 
 
-public class myadapter extends FirebaseRecyclerAdapter<flights,myadapter.myviewholder>
+public class   myadapter extends FirebaseRecyclerAdapter<flights,myadapter.myviewholder>
 {
     public myadapter(@NonNull FirebaseRecyclerOptions<flights> options) {
         super(options);
