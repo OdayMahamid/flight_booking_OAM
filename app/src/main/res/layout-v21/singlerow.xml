@@ -44,18 +44,7 @@
             android:textSize="25sp" />
 
         <TextView
-            android:id="@+id/fromdate_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/from_text"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="34dp"
-            android:text="@string/this_is_email_name"
-            android:textColor="#000"
-            android:textSize="25sp" />
-
-        <TextView
-            android:id="@+id/todate_text"
+            android:id="@+id/date_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/from_text"

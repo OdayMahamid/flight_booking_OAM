@@ -26,7 +26,7 @@ public class custlogin extends AppCompatActivity {
         setContentView(R.layout.activity_custlogin);
         email_editText = findViewById(R.id.signin_email);
         password_editText = findViewById(R.id.signin_password);
-        login_button = findViewById(R.id.cust_button);
+        login_button = findViewById(R.id.login_button);
         signUp_text = findViewById(R.id.signin_signupBtn);
         forgotPassword_text = findViewById(R.id.signin_forgotpasswod);
 
