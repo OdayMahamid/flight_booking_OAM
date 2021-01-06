@@ -1,6 +1,7 @@
 package com.example.flightsbookingapp;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,7 +13,10 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -26,6 +30,10 @@ public class manager_profile extends AppCompatActivity implements View.OnClickLi
     private TextView email;
     private Button change_name;
     private Button change_pass;
+    private RecyclerView recyclerView;
+    flightsadabter adapter; // Create Object of the Adapter class
+    DatabaseReference mbase; // Create object of the
+    // Firebase Realtime Database
     Button dialog_name;
     EditText dialogname;
     EditText dialogpass;
@@ -49,6 +57,25 @@ public class manager_profile extends AppCompatActivity implements View.OnClickLi
         change_name=findViewById(R.id.namechange);
         change_pass=findViewById(R.id.passwordchange);
 
+        // Create a instance of the database and get
+        // its reference
+        mbase = FirebaseDatabase.getInstance().getReference("Managers").child(manager_id).child("flights");
+        recyclerView = findViewById(R.id.recycler_flights);
+        recyclerView.setLayoutManager(
+                new LinearLayoutManager(this));
+
+        // It is a class provide by the FirebaseUI to make a
+        // query in the database to fetch appropriate data
+        FirebaseRecyclerOptions<flights> options
+                = new FirebaseRecyclerOptions.Builder<flights>()
+                .setQuery(mbase, flights.class)
+                .build();
+        // Connecting object of required Adapter class to
+        // the Adapter class itself
+        adapter = new flightsadabter(options);
+        // Connecting Adapter class with the Recycler view*/
+        recyclerView.setAdapter(adapter);
+
         db=FirebaseDatabase.getInstance();
         manageref=db.getReference("Managers").child(manager_id);
         manageref.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -71,8 +98,24 @@ public class manager_profile extends AppCompatActivity implements View.OnClickLi
         change_pass.setOnClickListener(this);
         change_name.setOnClickListener(this);
 
-
+        back.setOnClickListener(this);
     }
+
+    // Function to tell the app to start getting
+    // data from database on starting of the activity
+    @Override protected void onStart()
+    {
+        super.onStart();
+        adapter.startListening();
+    }
+    // Function to tell the app to stop getting
+    // data from database on stoping of the activity
+    @Override protected void onStop()
+    {
+        super.onStop();
+        adapter.stopListening();
+    }
+
     public  void changename()
     {
         d=new Dialog(this);
@@ -102,7 +145,13 @@ public class manager_profile extends AppCompatActivity implements View.OnClickLi
 
     @Override
     public void onClick(View v) {
-        if(v.getId() == R.id.namechange)
+        if(v.getId() == R.id.back_button)
+        {
+            Intent myIntent = new Intent(getApplicationContext(), manageractivity.class);//move to main menu actiivity
+            myIntent.putExtra("manager_id", manager_id);
+            startActivity(myIntent);
+        }
+            if(v.getId() == R.id.namechange)
         {
             changename();
 

@@ -61,6 +61,7 @@ public class   myadapter extends FirebaseRecyclerAdapter<flights,myadapter.myvie
                 flights u = new flights(from_text.getText().toString(), dest_text.getText().toString(), date_text.getText().toString(),cost_text.getText().toString());
                 DatabaseReference ref1= FirebaseDatabase.getInstance().getReference("users/"+ Objects.requireNonNull(ref.getCurrentUser()).getUid()+"/user_flights/"+u.getTo());
                 ref1.child(ref.getCurrentUser().getUid()).setValue(u);
+
             });
         }
 

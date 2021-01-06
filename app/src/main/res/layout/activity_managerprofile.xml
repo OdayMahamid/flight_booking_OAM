@@ -46,13 +46,16 @@
     <ImageButton
         android:id="@+id/back_button"
         style="@style/Widget.AppCompat.ImageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="99dp"
+        android:layout_height="66dp"
+        android:background="#00FFFFFF"
         android:tint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recycler_flights"
+        app:layout_constraintVertical_bias="0.392"
         app:srcCompat="@drawable/icons8_go_back_64" />
 
     <TextView
