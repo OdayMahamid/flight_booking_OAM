@@ -16,7 +16,26 @@ public class flights {
     public flights(){
 
     }
+   String getFrom(){
+        return this.from;
 
+   }
+    String getDest(){
+        return this.dest;
+
+    }
+    String getCost(){
+        return this.cost;
+
+    }
+    String getFromD(){
+        return this.fromdate;
+
+    }
+    String getDestD(){
+        return this.todate;
+
+    }
     @Override
     public String toString() {
         return "flights{" +
