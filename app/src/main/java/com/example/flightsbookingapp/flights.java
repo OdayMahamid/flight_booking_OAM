@@ -1,49 +1,96 @@
 package com.example.flightsbookingapp;
 
 public class flights {
-    public String from;
-    public String dest;
-    public String fromdate, todate,cost;
+    private String from;
+    private String To;
+    private String day;
+    private String month;
+    private String year;
+    private String dep_time;
+    private String lan_time;
+    private String Price;
+    private String Date;
 
-    public flights(String from, String dest, String fromdate, String todate, String cost) {
+
+    public flights() {
+    }
+
+    public flights(String from, String dest, String day, String month, String year, String dep_time, String lan_time, String price) {
         this.from = from;
-        this.dest = dest;
-        this.fromdate = fromdate;
-        this.todate = todate;
-        this.cost = cost;
+        this.To = dest;
+        this.day = day;
+        this.month = month;
+        this.year = year;
+        this.dep_time = dep_time;
+        this.lan_time = lan_time;
+        this.Price=price;
+        this.Date=day+"."+month+"."+year;
+    }
+    public flights(String from, String dest, String day,String month, String year,String price) {
+        this.from = from;
+        this.To = dest;
+        this.Price=price;
+        this.day=day;
+        this.month=month;
+        this.year=year;
+        setDate(day, month, year);
+    }
+    public flights(String from, String dest, String date, String price) {
+        this.from = from;
+        this.To = dest;
+        this.Price=price;
+        this.Date=date;
+        setdate1(date);
+    }
+    public void  setdate1(String date)
+    {
+        String[] split= date.split(".");
+        this.day=split[0];
+        this.month=split[1];
+        this.year=split[2];
+    }
+    public void setDate(String day, String month, String year)
+    {
+        this.Date=day+"."+month+"."+year;
+    }
+    public String getDate()
+    {
+        return this.Date;
     }
 
-    public flights(){
-
+    public void setDate(String date) {
+        Date = date;
     }
-   String getFrom(){
-        return this.from;
 
-   }
-    String getDest(){
-        return this.dest;
+    public String getPrice() { return Price; }
 
-    }
-    String getCost(){
-        return this.cost;
+    public void setPrice(String price) { Price = price; }
 
-    }
-    String getFromD(){
-        return this.fromdate;
+    public String getFrom() { return from; }
 
-    }
-    String getDestD(){
-        return this.todate;
+    public void setFrom(String from) { this.from = from; }
 
-    }
-    @Override
-    public String toString() {
-        return "flights{" +
-                "from='" + from + '\'' +
-                ", dest='" + dest + '\'' +
-                ", from_date='" + fromdate + '\'' +
-                ", to_date='" + todate + '\'' +
-                ", cost='" + cost + '\'' +
-                '}';
-    }
+    public String getTo() { return To; }
+
+    public void setTo(String dest) { this.To= dest; }
+
+    public String getDay() { return day; }
+
+    public void setDay(String day) { this.day = day; }
+
+    public String getMonth() { return month; }
+
+    public void setMonth(String month) { this.month = month; }
+
+    public String getYear() { return year; }
+
+    public void setYear(String year) { this.year = year; }
+
+    public String getDep_time() { return dep_time; }
+
+    public void setDep_time(String dep_time) { this.dep_time = dep_time; }
+
+    public String getLan_time() { return lan_time; }
+
+    public void setLan_time(String lan_time) { this.lan_time = lan_time; }
 }

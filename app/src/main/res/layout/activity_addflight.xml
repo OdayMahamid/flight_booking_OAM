@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flightsedails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context=".FlightDetails">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="84dp"
+        android:layout_height="69dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093"
+        app:srcCompat="@drawable/globe" />
+
+    <EditText
+        android:id="@+id/fromtext"
+        android:layout_width="398dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="From"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.218" />
+
+    <EditText
+        android:id="@+id/totext"
+        android:layout_width="398dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="To"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fromtext"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/deptime"
+        android:layout_width="398dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Departure time"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totext"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/landtime"
+        android:layout_width="398dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="Land time"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deptime"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="243dp"
+        android:layout_height="58dp"
+        android:text="Add a new flight"
+        android:textColor="#FBFAFA"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/fromtext"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.696" />
+
+    <EditText
+        android:id="@+id/daytext"
+        android:layout_width="126dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="Day"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/pricetext"
+        app:layout_constraintEnd_toStartOf="@+id/monthtext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/landtime" />
+
+    <EditText
+        android:id="@+id/monthtext"
+        android:layout_width="126dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="Month"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/pricetext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/landtime" />
+
+    <EditText
+        android:id="@+id/pricetext"
+        android:layout_width="398dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="Price per seat"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/addbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/landtime"
+        app:layout_constraintVertical_bias="0.881" />
+
+    <Button
+        android:id="@+id/addbutton"
+        android:layout_width="229dp"
+        android:layout_height="46dp"
+        android:text="Add"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#165A8F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/landtime"
+        app:layout_constraintVertical_bias="0.834" />
+
+    <EditText
+        android:id="@+id/yeartext"
+        android:layout_width="126dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="Year"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/pricetext"
+        app:layout_constraintStart_toEndOf="@+id/monthtext"
+        app:layout_constraintTop_toBottomOf="@+id/landtime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

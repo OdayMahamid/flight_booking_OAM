@@ -8,7 +8,7 @@
     tools:context="com.example.flightsbookingapp.MainActivity">
 
     <Button
-        android:id="@+id/cust_button"
+        android:id="@+id/login_button"
         android:layout_width="312dp"
         android:layout_height="56dp"
         android:text="customer click here"
@@ -44,10 +44,10 @@
         android:textStyle="normal|bold"
         app:backgroundTint="#8173B5"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/cust_button"
+        app:layout_constraintEnd_toEndOf="@+id/login_button"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/cust_button"
-        app:layout_constraintTop_toBottomOf="@+id/cust_button"
+        app:layout_constraintStart_toStartOf="@+id/login_button"
+        app:layout_constraintTop_toBottomOf="@+id/login_button"
         app:layout_constraintVertical_bias="0.191" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,6 +14,10 @@
         <activity android:name=".custlogin"></activity>
         <activity android:name=".managerlogin"></activity>
         <activity android:name=".manager_register"></activity>
+        <activity android:name=".manageractivity"></activity>
+        <activity android:name=".FlightDetails"></activity>
+        <activity android:name=".manager_profile"></activity>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

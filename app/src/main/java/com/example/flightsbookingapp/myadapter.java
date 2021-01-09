@@ -1,4 +1,3 @@
-
 package com.example.flightsbookingapp;
 
 import android.util.Log;
@@ -29,43 +28,40 @@ public class   myadapter extends FirebaseRecyclerAdapter<flights,myadapter.myvie
     @Override
     protected void onBindViewHolder(@NonNull myviewholder holder, int position, @NonNull flights flight_model)
     {
-        holder.from_text.setText("From: " + flight_model.getFrom());
-        holder.dest_text.setText("To: " + flight_model.getDest());
-        holder.date_text.setText("Date: " + flight_model.getFromD());
-        holder.cost_text.setText("Cost: " + flight_model.getCost());
+       holder.from_text.setText("From: " + flight_model.getFrom());
+       holder.dest_text.setText("To: " + flight_model.getTo());
+       holder.date_text.setText("Date: " + flight_model.getDate());
+       holder.cost_text.setText("Cost: " + flight_model.getPrice());
     }
     @NonNull
     @Override
     public myviewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
-        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.singlerow,parent,false);
-        return new myviewholder(view);
+       View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.singlerow,parent,false);
+       return new myviewholder(view);
     }
 
 
     static class myviewholder extends RecyclerView.ViewHolder
     {
         FirebaseAuth ref=FirebaseAuth.getInstance();
-        TextView cost_text, from_text, dest_text, date_text,fromdate_text, todate_text;;
+        TextView cost_text, from_text, dest_text, date_text;
         Button b;
         public myviewholder(@NonNull View itemView)
         {
             super(itemView);
-
-            TextView item;
-
             cost_text = itemView.findViewById(R.id.cost_text);
             from_text = itemView.findViewById(R.id.from_text);
             dest_text = itemView.findViewById(R.id.dest_text);
-            fromdate_text = itemView.findViewById(R.id.fromdate_text);
-            todate_text = itemView.findViewById(R.id.todate_text);
+            date_text = itemView.findViewById(R.id.date_text);
             b = itemView.findViewById(R.id.button232);
 
             // buy button
             b.setOnClickListener(v -> {
-                flights u = new flights(from_text.getText().toString(), dest_text.getText().toString(), fromdate_text.getText().toString(), todate_text.getText().toString(), cost_text.getText().toString());
-                DatabaseReference ref1 = FirebaseDatabase.getInstance().getReference("users/" + Objects.requireNonNull(ref.getCurrentUser()).getUid() + "/user_flights/" + u.dest);
+                flights u = new flights(from_text.getText().toString(), dest_text.getText().toString(), date_text.getText().toString(),cost_text.getText().toString());
+                DatabaseReference ref1= FirebaseDatabase.getInstance().getReference("users/"+ Objects.requireNonNull(ref.getCurrentUser()).getUid()+"/user_flights/"+u.getTo());
                 ref1.child(ref.getCurrentUser().getUid()).setValue(u);
+
             });
         }
 

@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        cust_button = (Button)findViewById(R.id.cust_button);
+        cust_button = (Button)findViewById(R.id.login_button);
         manager_button=(Button)findViewById(R.id.managerbutton);
 
         cust_button.setOnClickListener(new View.OnClickListener() {

@@ -10,6 +10,8 @@ public class Manager {
         this.email = email;
         this.password=password;
     }
+    public Manager()
+    {}
 
     public String getPassword() {
         return password;
