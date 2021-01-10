@@ -93,7 +93,7 @@ public class register extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) //checks if the connection was successful
             {
                 if (task.isSuccessful()) {
-                    User u = new User(nameText, ref.getCurrentUser().getEmail()); //create a User's object
+                    User u = new User(nameText, ref.getCurrentUser().getEmail(),passwordText); //create a User's object
                     DatabaseReference ref1= FirebaseDatabase.getInstance().getReference("users");
                     ref1.child(ref.getCurrentUser().getUid()).setValue(u);
                     prog.setVisibility(View.GONE);

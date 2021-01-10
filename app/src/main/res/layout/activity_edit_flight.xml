@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context=".FlightDetails">
+
+    <EditText
+        android:id="@+id/edit_price"
+        android:layout_width="318dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="208dp"
+        android:ems="10"
+        android:hint="price_per_seat"
+        android:inputType="textPersonName"
+        android:textColor="#3D5AFE"
+        android:textColorHint="#2979FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_duration"
+        app:layout_constraintVertical_bias="0.352" />
+
+    <EditText
+        android:id="@+id/edit_from"
+        android:layout_width="318dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="from"
+        android:inputType="textCapWords|textCapCharacters"
+        android:textColor="#3D5AFE"
+        android:textColorHint="#2979FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flight_details"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/edit_to"
+        android:layout_width="318dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="to"
+        android:inputType="textCapWords|textCapCharacters"
+        android:textColor="#3D5AFE"
+        android:textColorHint="#2979FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_from"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <EditText
+        android:id="@+id/edit_dep_time"
+        android:layout_width="318dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="departure_time"
+        android:inputType="textPersonName"
+        android:textColor="#3D5AFE"
+        android:textColorHint="#2979FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_to"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <EditText
+        android:id="@+id/edit_land_time"
+        android:layout_width="318dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="landing_time"
+        android:inputType="textPersonName"
+        android:textColor="#3D5AFE"
+        android:textColorHint="#2979FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_dep_time"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <TextView
+        android:id="@+id/flight_details"
+        android:layout_width="239dp"
+        android:layout_height="34dp"
+        android:text="enter_flight_details"
+        android:textColor="#2979FF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.117" />
+
+    <Button
+        android:id="@+id/add_flight"
+        android:layout_width="265dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="24dp"
+        android:text="edit flight"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_price" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="84dp"
+        android:layout_height="69dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09"
+        app:srcCompat="@drawable/globe" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,7 @@ import java.util.Date;
 
 public class User
 {
+    public String password;
     public String name;
     public String email;
     public String created_date;
@@ -31,4 +32,12 @@ public class User
     }
 
 
+    public User(String nameText, String email, String passwordText) {
+        this.name=nameText;
+        this.email=email;
+        this.password=passwordText;
+        String pattern = "yyyy-MM-dd";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+        this.created_date = simpleDateFormat.format(new Date());
+    }
 }
