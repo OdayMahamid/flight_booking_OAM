@@ -40,11 +40,20 @@ public class flights {
         this.To = dest;
         this.Price=price;
         this.Date=date;
-//        setdate1(date);
+       setdate1(date);
+    }
+    public flights(String from, String dest, String date,String dep,String lan, String price,int x) {
+        this.from = from;
+        this.To = dest;
+        this.Price=price;
+        this.Date=date;
+        this.dep_time=dep;
+        this.lan_time=lan;
+        setdate1(date);
     }
     public void  setdate1(String date)
     {
-        String[] split= date.split(".");
+        String[] split= date.split("\\.");
         this.day=split[0];
         this.month=split[1];
         this.year=split[2];

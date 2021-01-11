@@ -4,14 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/list"
     tools:context=".Activity_cus_flights">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/cust_recV"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="309dp"
+        android:layout_height="436dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="85dp"
+        android:layout_height="68dp"
+        android:background="@color/cardview_shadow_end_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cust_recV"
+        app:layout_constraintVertical_bias="0.154"
+        app:srcCompat="@drawable/icons8_go_back_64" />
+
+    <TextView
+        android:id="@+id/cust_text"
+        android:layout_width="242dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/cust_recV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774" />
 </androidx.constraintlayout.widget.ConstraintLayout>

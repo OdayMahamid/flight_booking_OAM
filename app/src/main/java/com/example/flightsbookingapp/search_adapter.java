@@ -1,7 +1,5 @@
 package com.example.flightsbookingapp;
 
-import android.util.Log;
-
 import java.util.LinkedList;
 import java.util.List;
 import android.view.LayoutInflater;
@@ -111,7 +109,7 @@ public class search_adapter extends RecyclerView.Adapter<search_adapter.myviewho
             from_text = itemView.findViewById(R.id.user_name_text);
             dest_text = itemView.findViewById(R.id.user_password_text);
             date_text = itemView.findViewById(R.id.date_text);
-            b = itemView.findViewById(R.id.edit_flight_button);
+            b = itemView.findViewById(R.id.cust_button);
 
             // buy button
             b.setOnClickListener(v -> {

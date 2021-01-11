@@ -1,6 +1,5 @@
 package com.example.flightsbookingapp;
 
-import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -62,7 +61,7 @@ public class   myadapter extends FirebaseRecyclerAdapter<flights,myadapter.myvie
             dest_text = itemView.findViewById(R.id.user_password_text);
             date_text = itemView.findViewById(R.id.date_text);
             add = itemView.findViewById(R.id.confirm_text);
-            b = itemView.findViewById(R.id.edit_flight_button);
+            b = itemView.findViewById(R.id.cust_button);
 
             // buy button
             b.setOnClickListener(v -> {

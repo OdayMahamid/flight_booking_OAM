@@ -18,7 +18,7 @@ public class single_row extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_showdata);
-        btn = findViewById(R.id.edit_flight_button);
+        btn = findViewById(R.id.cust_button);
         btn.setOnClickListener(view -> {
             Log.d("", "onCreate: " + ref.getCurrentUser().getUid());
             DatabaseReference ref1= FirebaseDatabase.getInstance().getReference(ref.getCurrentUser().getUid());

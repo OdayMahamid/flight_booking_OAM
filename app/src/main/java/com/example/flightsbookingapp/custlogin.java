@@ -18,6 +18,7 @@ public class custlogin extends AppCompatActivity {
     private Button login_button, signUp_text;
     private TextView  forgotPassword_text;
     private FirebaseAuth ref = FirebaseAuth.getInstance();
+    String cust_id;
 
 
     @Override

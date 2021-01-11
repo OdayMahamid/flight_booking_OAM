@@ -82,8 +82,8 @@ public class FlightDetails extends AppCompatActivity implements View.OnClickList
                             String fromflight = (String) postSnapshot.child("from").getValue().toString();
                             String toflight= (String) postSnapshot.child("to").getValue().toString();
                             String dateflight= (String) postSnapshot.child("date").getValue().toString();
-                            String deptime=(String) postSnapshot.child("Departure time").toString();
-                            String landtime=(String) postSnapshot.child("Land time").toString();
+                            String deptime=(String) postSnapshot.child("dep_time").toString();
+                            String landtime=(String) postSnapshot.child("lan_time").toString();
 
                             // if this flight is already exist ?
                             if (fromflight.equals(fromStr)&&toflight.equals(toStr)&&dateflight.equals(dateStr)

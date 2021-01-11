@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,10 +14,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
-import java.util.Objects;
 
 
 public class myadapter_edit extends FirebaseRecyclerAdapter<flights, myadapter_edit.myviewholder>
@@ -63,7 +58,7 @@ public class myadapter_edit extends FirebaseRecyclerAdapter<flights, myadapter_e
             dest_text = itemView.findViewById(R.id.edit_to);
             date_land_text = itemView.findViewById(R.id.edit_land_time);
             edit_dep_time = itemView.findViewById(R.id.edit_dep_time);
-            b = itemView.findViewById(R.id.edit_flight_button);
+            b = itemView.findViewById(R.id.cust_button);
 
             // edit button
             b.setOnClickListener(this::onClick);

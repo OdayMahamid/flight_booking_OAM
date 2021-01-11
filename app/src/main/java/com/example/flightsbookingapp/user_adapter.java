@@ -14,10 +14,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
-import java.util.Objects;
 
 
 public class user_adapter extends FirebaseRecyclerAdapter<User, user_adapter.myviewholder>
@@ -56,7 +52,7 @@ public class user_adapter extends FirebaseRecyclerAdapter<User, user_adapter.myv
             cost_text = itemView.findViewById(R.id.user_email);
             from_text = itemView.findViewById(R.id.user_name_text);
             dest_text = itemView.findViewById(R.id.user_password_text);
-            b = itemView.findViewById(R.id.edit_flight_button);
+            b = itemView.findViewById(R.id.cust_button);
 
             // customer flights button
             b.setOnClickListener(v -> {

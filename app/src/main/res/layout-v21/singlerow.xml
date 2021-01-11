@@ -70,7 +70,7 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/edit_flight_button"
+            android:id="@+id/cust_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
