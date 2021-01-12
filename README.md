@@ -1,5 +1,5 @@
 # flight booking App
-## Team : Aseel Nemer, Oday Mahamed , Medhat Samar.
+## Team : Aseel Nemer, Oday Mahamid , Medhat Samar.
 *  We want to bring the world to you. From choosing a destination to finding the best price, we want you to have all the options at your fingertips. That's why we're focused on making travel better for everyone. To make the entire planning and booking experience easy, simple, and enjoyable from start to finish 
 
 * you have to login with your email and password
